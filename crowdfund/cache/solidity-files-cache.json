@@ -1,0 +1,221 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/lizongrong/Dapp-Learning-main/basic/12-token-crowdfund/contracts/CrowdFunding.sol": {
+      "lastModificationDate": 1652002384516,
+      "contentHash": "fcc60ef49f597bb3208c4cfb9da64444",
+      "sourceName": "contracts/CrowdFunding.sol",
+      "solcConfig": {
+        "version": "0.5.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol",
+        "./Project.sol"
+      ],
+      "versionPragmas": [
+        "0.5.4"
+      ],
+      "artifacts": [
+        "CrowdFunding"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/12-token-crowdfund/contracts/SafeMath.sol": {
+      "lastModificationDate": 1652002384518,
+      "contentHash": "3e683c2758b76d01d42d363587aa70e8",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/12-token-crowdfund/contracts/Project.sol": {
+      "lastModificationDate": 1652002384517,
+      "contentHash": "29576d9732cd5e8600a634f52d446e7a",
+      "sourceName": "contracts/Project.sol",
+      "solcConfig": {
+        "version": "0.5.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.4"
+      ],
+      "artifacts": [
+        "Project"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/12-token-crowdfund/contracts/MemberVote.sol": {
+      "lastModificationDate": 1652002384517,
+      "contentHash": "6356e947f517e0300e65fd1db16e8926",
+      "sourceName": "contracts/MemberVote.sol",
+      "solcConfig": {
+        "version": "0.5.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "MembersVote"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/12-token-crowdfund/contracts/SimpleToken.sol": {
+      "lastModificationDate": 1652002384518,
+      "contentHash": "a4b89d7ee842a3e378d2f28b1c40b849",
+      "sourceName": "contracts/SimpleToken.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "AccessControlEnumerable",
+        "Address",
+        "Arrays",
+        "Context",
+        "Counters",
+        "ECDSA",
+        "EIP712",
+        "ERC165",
+        "ERC20",
+        "ERC20Burnable",
+        "ERC20Capped",
+        "ERC20FlashMint",
+        "ERC20Pausable",
+        "ERC20Permit",
+        "ERC20PresetFixedSupply",
+        "ERC20PresetMinterPauser",
+        "ERC20Snapshot",
+        "ERC20Votes",
+        "ERC20VotesComp",
+        "EnumerableSet",
+        "IAccessControl",
+        "IAccessControlEnumerable",
+        "IERC165",
+        "IERC20",
+        "IERC20Metadata",
+        "IERC20Permit",
+        "IERC3156FlashBorrower",
+        "IERC3156FlashLender",
+        "Math",
+        "MerkleProof",
+        "Pausable",
+        "SafeCast",
+        "SafeERC20",
+        "SimpleToken",
+        "Strings",
+        "TokenTimelock"
+      ]
+    }
+  }
+}
