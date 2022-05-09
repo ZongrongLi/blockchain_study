@@ -1,0 +1,1521 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/AuctionFixedPrice.sol": {
+      "lastModificationDate": 1651756159008,
+      "contentHash": "72a56d9d2e6491fb25ae572a121e5278",
+      "sourceName": "contracts/AuctionFixedPrice.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC20.sol",
+        "./IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AuctionFixedPrice"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC721.sol": {
+      "lastModificationDate": 1651756159001,
+      "contentHash": "1b9ca297c46b9390126ea664046f5277",
+      "sourceName": "contracts/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC20.sol": {
+      "lastModificationDate": 1651756159000,
+      "contentHash": "c7492a9ab60ba083d345f893d5e0f33c",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC721Receiver.sol": {
+      "lastModificationDate": 1651756159001,
+      "contentHash": "d8643f8f4418925359f8b9c4f69c561c",
+      "sourceName": "contracts/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC165.sol": {
+      "lastModificationDate": 1651756159008,
+      "contentHash": "938fdec9afbef4f2c2782c0c58801482",
+      "sourceName": "contracts/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/AuctionUnfixedPrice.sol": {
+      "lastModificationDate": 1651756159001,
+      "contentHash": "c74c7faf92ab3c9dbc7f44181a5cfa79",
+      "sourceName": "contracts/AuctionUnfixedPrice.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC20.sol",
+        "./IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AuctionUnfixedPrice"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC721Metadata.sol": {
+      "lastModificationDate": 1651756159000,
+      "contentHash": "4bbcf525dade710e67cb77dac5dbde6e",
+      "sourceName": "contracts/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IMyERC721.sol": {
+      "lastModificationDate": 1651756159002,
+      "contentHash": "7a7c82c144161323202a1d2211612c16",
+      "sourceName": "contracts/IMyERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Enumerable.sol",
+        "./IERC721Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IMyERC721"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IERC721Enumerable.sol": {
+      "lastModificationDate": 1651756159000,
+      "contentHash": "fb0033dd85fd0a8d120ceb7c7432152a",
+      "sourceName": "contracts/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/CatBlindbox.sol": {
+      "lastModificationDate": 1651756159001,
+      "contentHash": "9cc1d1fc1a313b645e52028726195ee8",
+      "sourceName": "contracts/CatBlindbox.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IRandomNumberVRF.sol",
+        "./erc-token/extensions/Ownable.sol",
+        "./erc-token/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CatBlindbox"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/IRandomNumberVRF.sol": {
+      "lastModificationDate": 1651756159001,
+      "contentHash": "1681cbdcc8098fbc0414f82186669850",
+      "sourceName": "contracts/IRandomNumberVRF.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRandomNumberVRF"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Ownable.sol": {
+      "lastModificationDate": 1651756159005,
+      "contentHash": "4e32eaf5aa0b911010e0e6c1b4bdd679",
+      "sourceName": "contracts/erc-token/extensions/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/ERC721.sol": {
+      "lastModificationDate": 1651756159002,
+      "contentHash": "cb63f008b1a81b3cbc4ddbe13dc04e8c",
+      "sourceName": "contracts/erc-token/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./extensions/IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "./extensions/Address.sol",
+        "./extensions/Context.sol",
+        "./extensions/Strings.sol",
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Context.sol": {
+      "lastModificationDate": 1651756159007,
+      "contentHash": "bc047f55d4e6dcc5a9c7ee096f530312",
+      "sourceName": "contracts/erc-token/extensions/Context.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/IERC721.sol": {
+      "lastModificationDate": 1651756159003,
+      "contentHash": "bb0284c9c5077025e18a60c7031db001",
+      "sourceName": "contracts/erc-token/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/IERC721Receiver.sol": {
+      "lastModificationDate": 1651756159004,
+      "contentHash": "e6d69a0b5b95ac1112eb4746a2d66f3e",
+      "sourceName": "contracts/erc-token/extensions/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1651756159004,
+      "contentHash": "75cedcb24edaec014d2071ed59a03ff3",
+      "sourceName": "contracts/erc-token/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Address.sol": {
+      "lastModificationDate": 1651756159006,
+      "contentHash": "37103cdc416efc2601c6f6734044b559",
+      "sourceName": "contracts/erc-token/extensions/Address.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Strings.sol": {
+      "lastModificationDate": 1651756159007,
+      "contentHash": "e575d915a7dbf0decd510699a7fd53dc",
+      "sourceName": "contracts/erc-token/extensions/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/ERC165.sol": {
+      "lastModificationDate": 1651756159008,
+      "contentHash": "a9a5319dff9088c6ffe757ea1c2a6729",
+      "sourceName": "contracts/erc-token/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/IERC165.sol": {
+      "lastModificationDate": 1651756159008,
+      "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
+      "sourceName": "contracts/erc-token/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1651756159003,
+      "contentHash": "2b16122c5f36625084a7f90f0780937b",
+      "sourceName": "contracts/erc-token/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1651756159002,
+      "contentHash": "c04c8966474551625d14f3dbd4f32f96",
+      "sourceName": "contracts/erc-token/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721.sol",
+        "./extensions/ERC721Enumerable.sol",
+        "./extensions/ERC721Burnable.sol",
+        "./extensions/ERC721Pausable.sol",
+        "./extensions/ERC721URIStorage.sol",
+        "./extensions/AccessControlEnumerable.sol",
+        "./extensions/Context.sol",
+        "./extensions/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1651756159006,
+      "contentHash": "11629722b0e3c53cb55733af5176cd33",
+      "sourceName": "contracts/erc-token/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1651756159007,
+      "contentHash": "c9bd405cd358a0d3e052adec4a710c16",
+      "sourceName": "contracts/erc-token/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/ERC721Pausable.sol": {
+      "lastModificationDate": 1651756159005,
+      "contentHash": "dddb963897cd2b0106699e245e6a9782",
+      "sourceName": "contracts/erc-token/extensions/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/AccessControlEnumerable.sol": {
+      "lastModificationDate": 1651756159004,
+      "contentHash": "60e78a2b2e6c47ee22b36eed789508cd",
+      "sourceName": "contracts/erc-token/extensions/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccessControl.sol",
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable",
+        "IAccessControlEnumerable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Counters.sol": {
+      "lastModificationDate": 1651756159005,
+      "contentHash": "b7811964d33f23b2d45ed3ebb76a4548",
+      "sourceName": "contracts/erc-token/extensions/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1651756159003,
+      "contentHash": "f2ae82a09cc670ca19d644f60990b94d",
+      "sourceName": "contracts/erc-token/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/Pausable.sol": {
+      "lastModificationDate": 1651756159004,
+      "contentHash": "b27f00e428d06e0469d6379a8be28a26",
+      "sourceName": "contracts/erc-token/extensions/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/AccessControl.sol": {
+      "lastModificationDate": 1651756159007,
+      "contentHash": "84fffe061630c10174c9dd9040d94fc7",
+      "sourceName": "contracts/erc-token/extensions/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol",
+        "./Strings.sol",
+        "../ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "IAccessControl"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/EnumerableSet.sol": {
+      "lastModificationDate": 1651756159006,
+      "contentHash": "a5aa9ae842cb65a6022174cd212f039d",
+      "sourceName": "contracts/erc-token/extensions/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/MYERC721.sol": {
+      "lastModificationDate": 1651756159002,
+      "contentHash": "c40f00cb4086868d2497637b61b74bf9",
+      "sourceName": "contracts/erc-token/MYERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721PresetMinterPauserAutoId.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MYERC721"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/extensions/ERC721Holder.sol": {
+      "lastModificationDate": 1651756159006,
+      "contentHash": "f7696115fd076676f2f85356703ed807",
+      "sourceName": "contracts/erc-token/extensions/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/erc-token/SimpleToken.sol": {
+      "lastModificationDate": 1651756159007,
+      "contentHash": "cadba045d80c49fa38695acb56e12434",
+      "sourceName": "contracts/erc-token/SimpleToken.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "AccessControlEnumerable",
+        "Address",
+        "Arrays",
+        "Context",
+        "Counters",
+        "ECDSA",
+        "EIP712",
+        "ERC165",
+        "ERC20",
+        "ERC20Burnable",
+        "ERC20Capped",
+        "ERC20FlashMint",
+        "ERC20Pausable",
+        "ERC20Permit",
+        "ERC20PresetFixedSupply",
+        "ERC20PresetMinterPauser",
+        "ERC20Snapshot",
+        "ERC20Votes",
+        "ERC20VotesComp",
+        "EnumerableSet",
+        "IAccessControl",
+        "IAccessControlEnumerable",
+        "IERC165",
+        "IERC20",
+        "IERC20Metadata",
+        "IERC20Permit",
+        "IERC3156FlashBorrower",
+        "IERC3156FlashLender",
+        "Math",
+        "MerkleProof",
+        "Pausable",
+        "SafeCast",
+        "SafeERC20",
+        "SimpleToken",
+        "Strings",
+        "TokenTimelock"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/contracts/RandomNumberVRF.sol": {
+      "lastModificationDate": 1651756159002,
+      "contentHash": "d1c97bde345f01b5b726cb2b83469936",
+      "sourceName": "contracts/RandomNumberVRF.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.6"
+      ],
+      "artifacts": [
+        "RandomNumberVRF"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/node_modules/@chainlink/contracts/src/v0.6/VRFConsumerBase.sol": {
+      "lastModificationDate": 1652091074230,
+      "contentHash": "d0814ffd4b6a10aaed8b311ff73f341a",
+      "sourceName": "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./vendor/SafeMathChainlink.sol",
+        "./interfaces/LinkTokenInterface.sol",
+        "./VRFRequestIDBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "VRFConsumerBase"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/node_modules/@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol": {
+      "lastModificationDate": 1652091075460,
+      "contentHash": "5caf46296cfce2e0b96cb3028b626ee5",
+      "sourceName": "@chainlink/contracts/src/v0.6/vendor/SafeMathChainlink.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMathChainlink"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/node_modules/@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol": {
+      "lastModificationDate": 1652091075450,
+      "contentHash": "bb291d0e43a81edd96f781b2760d9553",
+      "sourceName": "@chainlink/contracts/src/v0.6/interfaces/LinkTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "LinkTokenInterface"
+      ]
+    },
+    "/Users/lizongrong/Dapp-Learning-main/basic/16-nft-auction-exchange/node_modules/@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol": {
+      "lastModificationDate": 1652091074230,
+      "contentHash": "d06006d32515b595a7b70c88328ffd7e",
+      "sourceName": "@chainlink/contracts/src/v0.6/VRFRequestIDBase.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "VRFRequestIDBase"
+      ]
+    }
+  }
+}
