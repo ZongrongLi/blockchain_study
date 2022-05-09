@@ -2,26 +2,26 @@
 # 函数说明：
 1. 锁仓合约初始化函数constructor(...)，包含5个参数：
 
- address _beneficiary：接受通证投放的收益账户；
- uint256 _start： 起始时间（Unix time），提示从什么时刻开始计时；
- uint256 _cliff： 单位为秒（s），断崖时间，例如“锁仓4年，1年之后一次性解冻25%”中的1年
- uint256 _duration： 单位为秒（s），持续锁仓时间，例如“锁仓4年，1年之后一次性解冻25%”中的4年；
- bool _revocable： 是否可回收 （例如公司给了员工张三 10K 代币锁仓4年，张三在工作一年的时候离职了，剩余的部分公司是否可回收）
- 举例来说明：
- 如果 _cliff=半年 ，_duration=1年 具体解冻情况如下：
- Month 1: I get 0 tokens
- Month 2: I get 0 tokens
- Month 3: I get 0 tokens
- Month 4: I get 0 tokens
- Month 5: I get 0 tokens
- Month 6: I get 0 tokens --- End of cliff
- Month 7: I get 700 tokens (7/12th)
- Month 8: I get 100 tokens (8/12th)
- Month 9: I get 100 tokens (9/12th)
- Month 10: I get 100 tokens (10/12th)
- Month 11: I get 100 tokens (11/12th)
- Month 12: I get 100 tokens (12/12th)
-2. 期权代币释放函数release(...)，包含1个参数：
+ address _beneficiary：接受通证投放的收益账户；  
+ uint256 _start： 起始时间（Unix time），提示从什么时刻开始计时；  
+ uint256 _cliff： 单位为秒（s），断崖时间，例如“锁仓4年，1年之后一次性解冻25%”中的1年  
+ uint256 _duration： 单位为秒（s），持续锁仓时间，例如“锁仓4年，1年之后一次性解冻25%”中的4年；  
+ bool _revocable： 是否可回收 （例如公司给了员工张三 10K 代币锁仓4年，张三在工作一年的时候离职了，剩余的部分公司是否可回收）  
+ 举例来说明：  
+ 如果 _cliff=半年 ，_duration=1年 具体解冻情况如下：  
+ Month 1: I get 0 tokens  
+ Month 2: I get 0 tokens  
+ Month 3: I get 0 tokens  
+ Month 4: I get 0 tokens  
+ Month 5: I get 0 tokens  
+ Month 6: I get 0 tokens --- End of cliff  
+ Month 7: I get 700 tokens (7/12th)  
+ Month 8: I get 100 tokens (8/12th)  
+ Month 9: I get 100 tokens (9/12th)  
+ Month 10: I get 100 tokens (10/12th)  
+ Month 11: I get 100 tokens (11/12th)  
+ Month 12: I get 100 tokens (12/12th)  
+2. 期权代币释放函数release(...)，包含1个参数：  
 
  Colorbay _token：_token为CLB代币的实例参数，时间到后通过该函数释放给对应的收益账户；
  期权代币回收函数revoke(...)，包含1个参数：
@@ -33,54 +33,54 @@
 3.  测试用例验证
 -   管理员账号发布一个ERC20的ColorBay代币合约
 
- 管理员地址：
- 0xca35b7d915458ef540ade6068dfe2f44e8fa733c
- 代币合约信息如下：
- (1) decimals = 18; (2) totalSupply() = 10亿； (3) symbol = CLB (4) paused = false
- (5) owner = 0xca35b7d915458ef540ade6068dfe2f44e8fa733c
- (6) contract address = 0x692a70d2e424a56d2c6c27aa97d1a86395877b3a
-
-CLB相关信息
-
--  管理员账号转发500万给员工激励专用账号用于期权激励专用
-
- 管理员地址：
- 0xca35b7d915458ef540ade6068dfe2f44e8fa733c
- 员工激励专用账号地址：
- 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c
- 转账操作：(记得去除500万后面的",")
- transfer("0x14723a09acff6d2a60dcdf7aa4aff308fddc160c", "5000000,000000000000000000")
- 【结果验证】
- balanceOf("0x14723a09acff6d2a60dcdf7aa4aff308fddc160c")
- 检查确认余额为500万CLB。
--  当前账号切换到员工激励专用账号下创建期权激励计划
-
- 场景假设：
- 激励计划起始时间为[2018.08.06 20:25]，2分钟内不得释放，持续5分钟(300s),支持回收未释放的期权
- 员工激励专用账号地址：
- 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c
- 被员工李四的私人收益账号地址：
- 0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db
- 调用函数：  constructor("0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db", "1533558300", "120", "300", true)
- 【说明】如何获得准确的起始时间，可用站长工具输入具体时间来转换。
- 期权激励智能合约实例创建成功信息如下：
- (1) contract address = 0x0fdf4894a3b7c5a101686829063be52ad45bcfb7
--  在CLB合约下，把CLB通证打给期权激励智能合约地址
-
- 切换到员工激励专用账号
- 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c
- 执行转账操作，（记得去除100万后面的","）
- transfer("0x0fdf4894a3b7c5a101686829063be52ad45bcfb7", "1000000,000000000000000000")
- 结果
- balanceOf("0x0fdf4894a3b7c5a101686829063be52ad45bcfb7") 检查确认余额为100万，表示CLB代币已经转给期权激励智能合约了。
--  [2018.08.06 17:31] 5分钟(300s)后测试分配期权
-
- 执行期权是否操作
- release("0x692a70d2e424a56d2c6c27aa97d1a86395877b3a")
- 切换到CLB合约下，查询李四私人账号
- balanceOf("0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db") 检查确认余额为100万，转账成功。
+ 管理员地址：  
+ 0xca35b7d915458ef540ade6068dfe2f44e8fa733c  
+ 代币合约信息如下：  
+ (1) decimals = 18; (2) totalSupply() = 10亿； (3) symbol = CLB (4) paused = false  
+ (5) owner = 0xca35b7d915458ef540ade6068dfe2f44e8fa733c  
+ (6) contract address = 0x692a70d2e424a56d2c6c27aa97d1a86395877b3a  
+  
+CLB相关信息  
+  
+-  管理员账号转发500万给员工激励专用账号用于期权激励专用  
+  
+ 管理员地址：  
+ 0xca35b7d915458ef540ade6068dfe2f44e8fa733c  
+ 员工激励专用账号地址：  
+ 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c  
+ 转账操作：(记得去除500万后面的",")  
+ transfer("0x14723a09acff6d2a60dcdf7aa4aff308fddc160c", "5000000,000000000000000000")  
+ 【结果验证】  
+ balanceOf("0x14723a09acff6d2a60dcdf7aa4aff308fddc160c")  
+ 检查确认余额为500万CLB。  
+-  当前账号切换到员工激励专用账号下创建期权激励计划  
+  
+ 场景假设：  
+ 激励计划起始时间为[2018.08.06 20:25]，2分钟内不得释放，持续5分钟(300s),支持回收未释放的期权  
+ 员工激励专用账号地址：  
+ 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c  
+ 被员工李四的私人收益账号地址：  
+ 0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db  
+ 调用函数：  constructor("0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db", "1533558300", "120", "300", true)  
+ 【说明】如何获得准确的起始时间，可用站长工具输入具体时间来转换。  
+ 期权激励智能合约实例创建成功信息如下：  
+ (1) contract address = 0x0fdf4894a3b7c5a101686829063be52ad45bcfb7  
+-  在CLB合约下，把CLB通证打给期权激励智能合约地址  
+  
+ 切换到员工激励专用账号  
+ 0x14723a09acff6d2a60dcdf7aa4aff308fddc160c  
+ 执行转账操作，（记得去除100万后面的","）  
+ transfer("0x0fdf4894a3b7c5a101686829063be52ad45bcfb7", "1000000,000000000000000000")  
+ 结果  
+ balanceOf("0x0fdf4894a3b7c5a101686829063be52ad45bcfb7") 检查确认余额为100万，表示CLB代币已经转给期权激励智能合约了。  
+-  [2018.08.06 17:31] 5分钟(300s)后测试分配期权  
+  
+ 执行期权是否操作  
+ release("0x692a70d2e424a56d2c6c27aa97d1a86395877b3a")  
+ 切换到CLB合约下，查询李四私人账号  
+ balanceOf("0x4b0897b0513fdc7c541b6d9d7e929c4e5364d2db") 检查确认余额为100万，转账成功。  
+     
    
- 
 
 
  
